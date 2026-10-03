@@ -73,6 +73,8 @@ def show_menu():
     6. Exit
     ----------------------------""")
 
+load_inventory()
+
 while True:
     show_menu()
     choice = input("Enter your choice: ")
@@ -98,5 +100,8 @@ while True:
     elif choice == "5":
         save_inventory()
         print("Inventory saved successfully.")
+
     elif choice == "6":
+        save_inventory()
+        print("Exiting the program. Inventory saved.")
         break
